@@ -1,0 +1,16 @@
+h1,h2,h3 {
+    font-weight: 600;
+}
+h4,h5,h6 {
+    font-weight: 400;
+}
+
+
+hr {
+    border: 1px solid $border-color;
+    width: 80%;
+    margin: 2em auto;
+}
+
+// Helpers
+.text-center {text-align: center;}

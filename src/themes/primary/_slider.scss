@@ -1,0 +1,81 @@
+// Import Rc Slider
+
+@import "~rc-slider/assets/index.css";
+
+.rc-slider-rail, .rc-slider-track, .rc-slider-step {
+    height: $slider-bar-height!important;
+    border-radius: 0!important;
+}
+.rc-slider-rail {
+    background-color: $slider-bar-bg!important;
+}
+.rc-slider-track {
+    background-color: $primary!important;
+}
+
+.rc-slider {
+    height: 30px!important;
+    margin-bottom: 5em;
+    padding: 20px 0 5px!important;
+}
+
+.rc-slider-mark {
+    top: 45px!important;
+    font-size: 14px!important;
+    small {
+        opacity: .3;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .rc-slider-mark {
+        font-size: 12px!important;
+    }
+}
+
+
+.rc-slider-mark-text-active, .rc-slider-mark-text {
+    color: $black!important;
+    font-weight: 600;
+}
+
+.rc-slider-dot {
+    display: none!important;
+}
+
+.rc-slider-handle {
+    border: none!important;
+    border-radius: 0!important;
+    background-color: $secondary!important;
+    width: 16px!important;
+    height: 20px!important;
+    margin-top: -26px!important;
+    margin-left: -8px!important;
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 6px solid $secondary;
+        position: absolute;
+        bottom: -6px;left: 0;
+    }
+}
+h1,h2,h3 {
+    font-weight: 600;
+}
+h4,h5,h6 {
+    font-weight: 400;
+}
+
+
+hr {
+    border: 1px solid $border-color;
+    width: 80%;
+    margin: 2em auto;
+}
+
+// Helpers
+.text-center {text-align: center;}
