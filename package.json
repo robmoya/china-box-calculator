@@ -1,0 +1,23 @@
+{
+  "name": "china-box",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.0.17",
+    "create-react-class": "^15.6.0",
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.1",
+    "rc-slider": "^8.3.1"
+  },
+  "scripts": {
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass-chokidar src/themes/app.scss -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/themes/app.scss -o src/ --watch --recursive"
+  }
+}
